@@ -18,7 +18,7 @@ class App extends StatelessWidget {
         canvasColor: CustomColors.GreyBackground,
         fontFamily: 'rubik',
       ),
-      home: Empty(),
+      home: Home(),
     );
   }
 }

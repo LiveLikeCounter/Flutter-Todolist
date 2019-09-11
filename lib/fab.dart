@@ -17,7 +17,7 @@ FloatingActionButton customFab(context) {
     child: Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
-      child: Image.asset('assets/images/add.png'),
+      child: Image.asset('assets/images/fab-add.png'),
       decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topLeft,
