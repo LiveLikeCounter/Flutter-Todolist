@@ -10,9 +10,13 @@ A Flutter app based on the design of the To Do App, created by *Rudi Hartono*, s
 
 ## Preview
 
-The app is based on Rudi's design, see a preview of the Flutter app result:
+The app is based on Rudi's design:
 
 ![App preview](doc/AppPreviewUplabs.jpg)
+
+The result is (HELP; the gif-quality is bad :( how can I make this better?):
+
+![App preview](doc/AppPreview.jpg)
 
 ## Support me
 
