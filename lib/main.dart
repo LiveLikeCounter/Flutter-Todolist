@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_todolist/onboarding.dart';
 import 'util.dart';
 
-import 'package:flutter_todolist/onboarding.dart';
-import 'package:flutter_todolist/task.dart';
 
 void main() => runApp(App());
 
@@ -16,7 +15,7 @@ class App extends StatelessWidget {
         canvasColor: CustomColors.GreyBackground,
         fontFamily: 'rubik',
       ),
-      home: Task(),
+      home: Onboarding(),
     );
   }
 }

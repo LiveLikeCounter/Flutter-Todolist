@@ -12,7 +12,7 @@ A Flutter app based on the design of the To Do App, created by *Rudi Hartono*, s
 
 The app is based on Rudi's design, see a preview of the Flutter app result:
 
-![App preview](doc/AppPreview.gif)
+![App preview](doc/AppPreviewUplabs.jpg)
 
 ## Support me
 

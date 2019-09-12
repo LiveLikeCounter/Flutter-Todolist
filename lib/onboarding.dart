@@ -97,8 +97,8 @@ class _OnboardingState extends State<Onboarding> {
                         boxShadow: [
                           BoxShadow(
                             color: CustomColors.GreenShadow,
-                            blurRadius: 30.0,
-                            spreadRadius: 20.0,
+                            blurRadius: 15.0,
+                            spreadRadius: 7.0,
                             offset: Offset(0.0, 0.0),
                           ),
                         ],
