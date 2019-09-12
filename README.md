@@ -16,7 +16,7 @@ The app is based on Rudi's design:
 
 The result is (HELP; the gif-quality is bad :( how can I make this better?):
 
-![App preview](doc/AppPreview.jpg)
+![App preview](doc/AppPreview.gif)
 
 ## Support me
 
