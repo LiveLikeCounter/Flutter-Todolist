@@ -20,13 +20,13 @@ class _HomeState extends State<Home> {
       appBar: fullAppbar(context),
       body: Container(
         width: MediaQuery.of(context).size.width,
-        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-        //  color: Colors.yellowAccent,
+        // padding: EdgeInsets.symmetric(vertical: 15),
+        //color: Colors.yellowAccent,
         child: ListView(
           scrollDirection: Axis.vertical,
           children: <Widget>[
             Container(
-              margin: EdgeInsets.only(bottom: 15),
+              margin: EdgeInsets.only(top: 15, left: 20, bottom: 15),
               child: Text(
                 'Today',
                 style: TextStyle(
@@ -36,18 +36,27 @@ class _HomeState extends State<Home> {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(bottom: 15),
+              margin: EdgeInsets.fromLTRB(20, 0, 20, 15),
               padding: EdgeInsets.fromLTRB(5, 13, 5, 13),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
-                  Icon(Icons.credit_card),
+                  Image.asset('assets/images/checked.png'),
                   Text(
                     '07.00 AM',
                     style: TextStyle(color: CustomColors.TextGrey),
                   ),
-                  Text('Go jogging with Christin', style: TextStyle(color: CustomColors.TextHeader, fontWeight: FontWeight.w600),),
-                  Icon(Icons.alarm)
+                  Container(
+                    width: 180,
+                    child: Text(
+                      'Go jogging with Christin',
+                      style: TextStyle(
+                          color: CustomColors.TextGrey,
+                          //fontWeight: FontWeight.w600,
+                          decoration: TextDecoration.lineThrough),
+                    ),
+                  ),
+                  Image.asset('assets/images/bell-small.png'),
                 ],
               ),
               decoration: BoxDecoration(
@@ -58,18 +67,141 @@ class _HomeState extends State<Home> {
                 borderRadius: BorderRadius.all(
                   Radius.circular(5.0),
                 ),
-              boxShadow: [
-                BoxShadow(
-                  color: CustomColors.GreyBorder,
-                  blurRadius: 10.0,
-                  spreadRadius: 5.0,
-                  offset: Offset(0.0, 0.0),
-                ),
-              ],
+                boxShadow: [
+                  BoxShadow(
+                    color: CustomColors.GreyBorder,
+                    blurRadius: 10.0,
+                    spreadRadius: 5.0,
+                    offset: Offset(0.0, 0.0),
+                  ),
+                ],
               ),
             ),
             Container(
-              margin: EdgeInsets.only(bottom: 15),
+              margin: EdgeInsets.fromLTRB(20, 0, 20, 15),
+              padding: EdgeInsets.fromLTRB(5, 13, 5, 13),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Image.asset('assets/images/checked-empty.png'),
+                  Text(
+                    '08.00 AM',
+                    style: TextStyle(color: CustomColors.TextGrey),
+                  ),
+                  Container(
+                    width: 180,
+                    child: Text(
+                      'Send project file',
+                      style: TextStyle(
+                          color: CustomColors.TextHeader,
+                          fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  Image.asset('assets/images/bell-small.png'),
+                ],
+              ),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  stops: [0.015, 0.015],
+                  colors: [CustomColors.GreenIcon, Colors.white],
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5.0),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: CustomColors.GreyBorder,
+                    blurRadius: 10.0,
+                    spreadRadius: 5.0,
+                    offset: Offset(0.0, 0.0),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(20, 0, 20, 15),
+              padding: EdgeInsets.fromLTRB(5, 13, 5, 13),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Image.asset('assets/images/checked-empty.png'),
+                  Text(
+                    '10.00 AM',
+                    style: TextStyle(color: CustomColors.TextGrey),
+                  ),
+                  Container(
+                    width: 180,
+                    child: Text(
+                      'Meeting with client',
+                      style: TextStyle(
+                          color: CustomColors.TextHeader,
+                          fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  Image.asset('assets/images/bell-small-yellow.png'),
+                ],
+              ),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  stops: [0.015, 0.015],
+                  colors: [CustomColors.PurpleIcon, Colors.white],
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5.0),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: CustomColors.GreyBorder,
+                    blurRadius: 10.0,
+                    spreadRadius: 5.0,
+                    offset: Offset(0.0, 0.0),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(20, 0, 20, 15),
+              padding: EdgeInsets.fromLTRB(5, 13, 5, 13),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Image.asset('assets/images/checked-empty.png'),
+                  Text(
+                    '13.00 PM',
+                    style: TextStyle(color: CustomColors.TextGrey),
+                  ),
+                  Container(
+                    width: 180,
+                    child: Text(
+                      'Email client',
+                      style: TextStyle(
+                          color: CustomColors.TextHeader,
+                          fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  Image.asset('assets/images/bell-small.png'),
+                ],
+              ),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  stops: [0.015, 0.015],
+                  colors: [CustomColors.GreenIcon, Colors.white],
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5.0),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: CustomColors.GreyBorder,
+                    blurRadius: 10.0,
+                    spreadRadius: 5.0,
+                    offset: Offset(0.0, 0.0),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(left: 20, bottom: 15),
               child: Text(
                 'Tomorrow',
                 style: TextStyle(
@@ -78,6 +210,253 @@ class _HomeState extends State<Home> {
                     color: CustomColors.TextSubHeader),
               ),
             ),
+            Container(
+              margin: EdgeInsets.fromLTRB(20, 0, 20, 15),
+              padding: EdgeInsets.fromLTRB(5, 13, 5, 13),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Image.asset('assets/images/checked-empty.png'),
+                  Text(
+                    '07.00 AM',
+                    style: TextStyle(color: CustomColors.TextGrey),
+                  ),
+                  Container(
+                    width: 180,
+                    child: Text(
+                      'Morning yoga',
+                      style: TextStyle(
+                          color: CustomColors.TextHeader,
+                          fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  Image.asset('assets/images/bell-small.png'),
+                ],
+              ),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  stops: [0.015, 0.015],
+                  colors: [CustomColors.YellowIcon, Colors.white],
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5.0),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: CustomColors.GreyBorder,
+                    blurRadius: 10.0,
+                    spreadRadius: 5.0,
+                    offset: Offset(0.0, 0.0),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(20, 0, 20, 15),
+              padding: EdgeInsets.fromLTRB(5, 13, 5, 13),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Image.asset('assets/images/checked-empty.png'),
+                  Text(
+                    '08.00 AM',
+                    style: TextStyle(color: CustomColors.TextGrey),
+                  ),
+                  Container(
+                    width: 180,
+                    child: Text(
+                      'Sending project file',
+                      style: TextStyle(
+                          color: CustomColors.TextHeader,
+                          fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  Image.asset('assets/images/bell-small.png'),
+                ],
+              ),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  stops: [0.015, 0.015],
+                  colors: [CustomColors.GreenIcon, Colors.white],
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5.0),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: CustomColors.GreyBorder,
+                    blurRadius: 10.0,
+                    spreadRadius: 5.0,
+                    offset: Offset(0.0, 0.0),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(20, 0, 20, 15),
+              padding: EdgeInsets.fromLTRB(5, 13, 5, 13),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Image.asset('assets/images/checked-empty.png'),
+                  Text(
+                    '10.00 AM',
+                    style: TextStyle(color: CustomColors.TextGrey),
+                  ),
+                  Container(
+                    width: 180,
+                    child: Text(
+                      'Meeting with client',
+                      style: TextStyle(
+                          color: CustomColors.TextHeader,
+                          fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  Image.asset('assets/images/bell-small-yellow.png'),
+                ],
+              ),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  stops: [0.015, 0.015],
+                  colors: [CustomColors.PurpleIcon, Colors.white],
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5.0),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: CustomColors.GreyBorder,
+                    blurRadius: 10.0,
+                    spreadRadius: 5.0,
+                    offset: Offset(0.0, 0.0),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(20, 0, 20, 15),
+              padding: EdgeInsets.fromLTRB(5, 13, 5, 13),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Image.asset('assets/images/checked-empty.png'),
+                  Text(
+                    '13.00 PM',
+                    style: TextStyle(color: CustomColors.TextGrey),
+                  ),
+                  Container(
+                    width: 180,
+                    child: Text(
+                      'Email client',
+                      style: TextStyle(
+                          color: CustomColors.TextHeader,
+                          fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  Image.asset('assets/images/bell-small.png'),
+                ],
+              ),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  stops: [0.015, 0.015],
+                  colors: [CustomColors.GreenIcon, Colors.white],
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5.0),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: CustomColors.GreyBorder,
+                    blurRadius: 10.0,
+                    spreadRadius: 5.0,
+                    offset: Offset(0.0, 0.0),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(20, 0, 20, 15),
+              padding: EdgeInsets.fromLTRB(5, 13, 5, 13),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Image.asset('assets/images/checked-empty.png'),
+                  Text(
+                    '13.00 PM',
+                    style: TextStyle(color: CustomColors.TextGrey),
+                  ),
+                  Container(
+                    width: 180,
+                    child: Text(
+                      'Meeting with client',
+                      style: TextStyle(
+                          color: CustomColors.TextHeader,
+                          fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  Image.asset('assets/images/bell-small-yellow.png'),
+                ],
+              ),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  stops: [0.015, 0.015],
+                  colors: [CustomColors.PurpleIcon, Colors.white],
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5.0),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: CustomColors.GreyBorder,
+                    blurRadius: 10.0,
+                    spreadRadius: 5.0,
+                    offset: Offset(0.0, 0.0),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(20, 0, 20, 15),
+              padding: EdgeInsets.fromLTRB(5, 13, 5, 13),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Image.asset('assets/images/checked-empty.png'),
+                  Text(
+                    '13.00 PM',
+                    style: TextStyle(color: CustomColors.TextGrey),
+                  ),
+                  Container(
+                    width: 180,
+                    child: Text(
+                      'Email client',
+                      style: TextStyle(
+                          color: CustomColors.TextHeader,
+                          fontWeight: FontWeight.w600),
+                    ),
+                  ),
+                  Image.asset('assets/images/bell-small.png'),
+                ],
+              ),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  stops: [0.015, 0.015],
+                  colors: [CustomColors.GreenIcon, Colors.white],
+                ),
+                borderRadius: BorderRadius.all(
+                  Radius.circular(5.0),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: CustomColors.GreyBorder,
+                    blurRadius: 10.0,
+                    spreadRadius: 5.0,
+                    offset: Offset(0.0, 0.0),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 15)
           ],
         ),
       ),

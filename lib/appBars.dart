@@ -51,7 +51,7 @@ Widget fullAppbar(BuildContext context) {
         preferredSize: Size.fromHeight(10),
         child: Container(
           margin: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
-          padding: EdgeInsets.symmetric(vertical: 5, horizontal: 15),
+          padding: EdgeInsets.fromLTRB(15, 5, 15, 0),
           decoration: BoxDecoration(
             color: CustomColors.HeaderGreyLight,
             borderRadius: BorderRadius.circular(5.0),

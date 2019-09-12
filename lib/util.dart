@@ -35,6 +35,7 @@ class CustomColors {
   static const Color HeaderGreyLight = Color.fromRGBO(225, 255, 255, 0.31); // 31%
 
   static const Color YellowIcon = Color.fromRGBO(249, 194, 41, 1);
+  static const Color YellowBell = Color.fromRGBO(225, 220, 0, 1);
   static const Color YellowAccent = Color.fromRGBO(255, 213, 6, 1);
   static const Color YellowShadow = Color.fromRGBO(243, 230, 37, 0.27); // 27%
   static const Color YellowBackground = Color.fromRGBO(255, 238, 155, 0.36); // 36%
