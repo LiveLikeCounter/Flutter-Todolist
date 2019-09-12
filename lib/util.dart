@@ -47,6 +47,8 @@ class CustomColors {
   static const Color TrashRedBackground = Color.fromRGBO(255, 207, 207, 1);
   
   static const Color TextHeader = Color.fromRGBO(85, 78, 143, 1);
+  static const Color TextHeaderGrey = Color.fromRGBO(104, 104, 104, 1);
+  static const Color TextSubHeaderGrey = Color.fromRGBO(161, 161, 161, 1);
   static const Color TextSubHeader = Color.fromRGBO(139, 135, 179, 1);
   static const Color TextBody = Color.fromRGBO(130, 160, 183, 1);
   static const Color TextGrey = Color.fromRGBO(198, 198, 200, 1);

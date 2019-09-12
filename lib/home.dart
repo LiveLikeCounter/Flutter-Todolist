@@ -12,7 +12,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  var bottomNavigationBarIndex = 1;
+  final bottomNavigationBarIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -462,7 +462,7 @@ class _HomeState extends State<Home> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: customFab(context),
-      bottomNavigationBar: bottomNavigationBar(bottomNavigationBarIndex),
+      bottomNavigationBar: BottomNavigationBarApp(context, bottomNavigationBarIndex),
     );
   }
 }

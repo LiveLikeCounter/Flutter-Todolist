@@ -12,7 +12,7 @@ class Empty extends StatefulWidget {
 }
 
 class _EmptyState extends State<Empty> {
-  var bottomNavigationBarIndex = 1;
+  var bottomNavigationBarIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -64,7 +64,7 @@ class _EmptyState extends State<Empty> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: customFab(context),
-      bottomNavigationBar: bottomNavigationBar(bottomNavigationBarIndex),
+      bottomNavigationBar: BottomNavigationBarApp(context, bottomNavigationBarIndex),
     );
   }
 }
