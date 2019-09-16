@@ -4,9 +4,11 @@ A Flutter app based on the design of the To Do App, created by *Rudi Hartono*, s
 
 ## Getting Started 🚀
 
+```shell
 - Clone the repo
 - Install the dependicies
 - Run it
+```
 
 ## Preview
 
@@ -14,9 +16,21 @@ The app is based on Rudi's design:
 
 ![App preview](doc/AppPreviewUplabs.jpg)
 
-The result is (HELP; the gif-quality is bad :( how can I make this better?):
+The result is:
 
 ![App preview](doc/AppPreview.gif)
+
+## Version history
+
+| Version |       Date         |             Comments             |
+| ------- | ------------------ | -------------------------------- |
+| 1.1     | September 16, 2019 | Set the statusbar to transparent |
+| 1.0     | ~September 2019    | Initial release                  |
+
+
+## Contributing
+
+Feel welcome and free to submit issues, pull requests and features to this repo.
 
 ## Support me
 
