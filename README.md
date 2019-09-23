@@ -24,10 +24,13 @@ The result is:
 
 | Version |       Date         |             Comments             |
 | ------- | ------------------ | -------------------------------- |
-| 1.2     | September 23, 2019 | Added swipe to delete: ![Swipe to delete](doc/Update swipe to delete.png) |
-| 1.1     | September 16, 2019 | Set the statusbar to transparent: ![Transparent statusbar](doc/Update transparent statusbar.png) |
+| 1.2     | September 23, 2019 | Added swipe to delete <sup>1</sup> |
+| 1.1     | September 16, 2019 | Set the statusbar to transparent <sup>2</sup> |
 | 1.0     | ~September 2019    | Initial release                  |
 
+<sup>1</sup> ![Swipe to delete](doc/Update swipe to delete.png)
+
+<sup>2</sup> ![Transparent statusbar](doc/Update transparent statusbar.png)
 
 ## Contributing
 
