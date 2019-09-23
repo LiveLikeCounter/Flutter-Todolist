@@ -24,10 +24,8 @@ The result is:
 
 | Version |       Date         |             Comments             |
 | ------- | ------------------ | -------------------------------- |
-| 1.2     | September 23, 2019 | Added swipe to delete: 
-![Swipe to delete](doc/UpdateSwipeToDelete.png) |
-| 1.1     | September 16, 2019 | Set the statusbar to transparent 
-![Transparent statusbar](doc/UpdateTransparentStatusbar.png) |
+| 1.2     | September 23, 2019 | Added swipe to delete: ![Swipe to delete](doc/UpdateSwipeToDelete.png) |
+| 1.1     | September 16, 2019 | Set the statusbar to transparent: ![Transparent statusbar](doc/UpdateTransparentStatusbar.png) |
 | 1.0     | ~September 2019    | Initial release                  |
 
 ## Contributing
@@ -41,9 +39,7 @@ Hence you can support me by:
 
 ⭐️ this repo if you like it.
 
-[![Donate with PayPal Me](doc/PayPalMeLogoSmall.png)](https://paypal.me/jwalhout?locale.x=nl_NL)
-
-<a href="https://www.buymeacoffee.com/bushjopie" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/jwalhout?locale.x=nl_NL)
 
 Thank you in advanced 👍
 
