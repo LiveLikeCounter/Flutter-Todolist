@@ -20,6 +20,8 @@ The result is:
 
 ![App preview](doc/AppPreview.gif)
 
+[![Get it on Google Play](doc/google-play-badge.png)](https://googleplaylink.com)
+
 ## Version history
 
 | Version |       Date         |             Comments             |
