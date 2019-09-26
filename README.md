@@ -10,7 +10,7 @@ A Flutter app based on the design of the To Do App, created by *Rudi Hartono*, s
 - Run it
 ```
 
-## Preview
+## Preview and Google Play
 
 The app is based on Rudi's design:
 
@@ -20,13 +20,14 @@ The result is:
 
 ![App preview](doc/AppPreview.gif)
 
-[![Get it on Google Play](doc/google-play-badge.png)](https://googleplaylink.com)
+[![Get it on Google Play](doc/google-play-badge.png)](https://play.google.com/store/apps/details?id=com.interestinate.flutter_todolist)
 
 ## Version history
 
 | Version |       Date         |             Comments             |
 | ------- | ------------------ | -------------------------------- |
-| 1.3     | September 23, 2019 | Added App-icons for deployment   |
+| 1.4     | September 26, 2019 | Published the App on Google Play |
+| 1.3     | September 24, 2019 | Added App-icons for deployment   |
 | 1.2     | September 23, 2019 | Added swipe to delete: ![Swipe to delete](doc/UpdateSwipeToDelete.png) |
 | 1.1     | September 16, 2019 | Set the statusbar to transparent: ![Transparent statusbar](doc/UpdateTransparentStatusbar.png) |
 | 1.0     | ~September 2019    | Initial release                  |
