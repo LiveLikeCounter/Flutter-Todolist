@@ -26,6 +26,7 @@ The result is:
 
 | Version |       Date         |             Comments             |
 | ------- | ------------------ | -------------------------------- |
+| 1.5     | December 10, 2019 | Changed build from prodcution to test |
 | 1.4     | September 26, 2019 | Published the App on Google Play |
 | 1.3     | September 24, 2019 | Added App-icons for deployment   |
 | 1.2     | September 23, 2019 | Added swipe to delete: ![Swipe to delete](doc/UpdateSwipeToDelete.png) |
