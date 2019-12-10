@@ -46,22 +46,28 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
-    signingConfigs {
-        release {
-           keyAlias keystoreProperties['keyAlias']
-           keyPassword keystoreProperties['keyPassword']
-           storeFile file(keystoreProperties['storeFile'])
-           storePassword keystoreProperties['storePassword']
-        }
-    }
+    /// PRODUCTION:
+    // signingConfigs {
+    //     release {
+    //        keyAlias keystoreProperties['keyAlias']
+    //        keyPassword keystoreProperties['keyPassword']
+    //        storeFile file(keystoreProperties['storeFile'])
+    //        storePassword keystoreProperties['storePassword']
+    //     }
+    // }
+
     buildTypes {
         release {
-            signingConfig signingConfigs.release
+            /// DEBUG:
+            signingConfig signingConfigs.debug
 
-            minifyEnabled true
-            useProguard true
+            /// PRODUCTION:
+            // signingConfig signingConfigs.release
 
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // minifyEnabled true
+            // useProguard true
+
+            // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
@@ -74,7 +80,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    classpath 'com.google.gms:google-services:4.2.0'
+    // classpath 'com.google.gms:google-services:4.2.0'
 }
 
-apply plugin: 'com.google.gms.google-services'
+// apply plugin: 'com.google.gms.google-services'
