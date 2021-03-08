@@ -249,6 +249,7 @@ class Modal {
                           RaisedButton(
                             onPressed: () {
                               subTasks.add('New subtask');
+                              print(subTasks.toString());
                             },
                             textColor: Colors.white,
                             padding: const EdgeInsets.all(0.0),
@@ -297,7 +298,8 @@ class Modal {
                               itemCount: subTasks.length,
                               itemBuilder: (BuildContext context, int index) {
                                 return Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 15.0),
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 15.0),
                                   child: TextFormField(
                                     initialValue: subTasks[index],
                                     autofocus: false,
@@ -306,8 +308,8 @@ class Modal {
                                       fontStyle: FontStyle.normal,
                                       color: Colors.grey,
                                     ),
-                                    decoration:
-                                        InputDecoration(border: InputBorder.none),
+                                    decoration: InputDecoration(
+                                        border: InputBorder.none),
                                   ),
                                 );
                               },
