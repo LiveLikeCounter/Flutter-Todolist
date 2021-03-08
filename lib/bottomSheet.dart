@@ -249,7 +249,7 @@ class Modal {
                           RaisedButton(
                             onPressed: () {
                               subTasks.add('New subtask');
-                              print(subTasks.toString());
+                              //print(subTasks.toString());
                             },
                             textColor: Colors.white,
                             padding: const EdgeInsets.all(0.0),
@@ -293,29 +293,47 @@ class Modal {
                           SizedBox(height: 10),
                           Container(
                             width: MediaQuery.of(context).size.width / 1.2,
-                            height: 120,
+                            height: 150,
                             child: ListView.builder(
                               itemCount: subTasks.length,
                               itemBuilder: (BuildContext context, int index) {
                                 return Container(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 15.0),
+                                  margin: const EdgeInsets.only(bottom: 5.0),
                                   child: TextFormField(
                                     initialValue: subTasks[index],
                                     autofocus: false,
                                     style: TextStyle(
-                                      fontSize: 12,
+                                      fontSize: 18,
                                       fontStyle: FontStyle.normal,
-                                      color: Colors.grey,
+                                      color: Colors.grey[850],
                                     ),
                                     decoration: InputDecoration(
-                                        border: InputBorder.none),
+                                      border: InputBorder.none,
+                                      enabledBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Colors.grey,
+                                          width: 1.0,
+                                        ),
+                                        borderRadius: BorderRadius.all(
+                                          Radius.circular(50.0),
+                                        ),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Colors.blue,
+                                          width: 2.0,
+                                        ),
+                                        borderRadius: BorderRadius.all(
+                                          Radius.circular(50.0),
+                                        ),
+                                      ),
+                                    ),
                                   ),
                                 );
                               },
                             ),
                           ),
-                          SizedBox(height: 20),
+                          SizedBox(height: 25),
                           RaisedButton(
                             onPressed: () {
                               Navigator.pushReplacement(
