@@ -1,16 +1,21 @@
 name: flutter_todolist
 description: A new Flutter project.
+publish_to: none
 
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.2.0 <3.0.0"
+  sdk: ">=2.8.1 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
-  gradient_app_bar: ^0.1.3
+  # gradient_app_bar: ^0.1.3
+  # https://github.com/joostlek/GradientAppBar/issues/23
+  gradient_app_bar:
+    git:
+      url: https://github.com/TinyProgrammers/GradientAppBar.git
   flutter_slidable: "^0.6.0"
 
 dev_dependencies:

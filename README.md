@@ -26,6 +26,7 @@ The result is:
 
 | Version |       Date         |             Comments             |
 | ------- | ------------------ | -------------------------------- |
+| 1.6     | May 19, 2021 | Migrate to Flutter 2 + Added Subtasks |
 | 1.5     | December 10, 2019 | Changed build from prodcution to test |
 | 1.4     | September 26, 2019 | Published the App on Google Play |
 | 1.3     | September 24, 2019 | Added App-icons for deployment   |
