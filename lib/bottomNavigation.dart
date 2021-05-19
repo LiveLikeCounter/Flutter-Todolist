@@ -4,12 +4,11 @@ import 'package:flutter_todolist/home.dart';
 import 'package:flutter_todolist/task.dart';
 import 'util.dart';
 
-
 class BottomNavigationBarApp extends StatelessWidget {
   final int bottomNavigationBarIndex;
   final BuildContext context;
 
-  const BottomNavigationBarApp(this. context, this.bottomNavigationBarIndex);
+  const BottomNavigationBarApp(this.context, this.bottomNavigationBarIndex);
 
   void onTabTapped(int index) {
     Navigator.of(context).push(
@@ -39,7 +38,7 @@ class BottomNavigationBarApp extends StatelessWidget {
                   : CustomColors.TextGrey,
             ),
           ),
-          title: Text('Home'),
+          label: 'Home',
         ),
         BottomNavigationBarItem(
           icon: Container(
@@ -51,7 +50,7 @@ class BottomNavigationBarApp extends StatelessWidget {
                   : CustomColors.TextGrey,
             ),
           ),
-          title: Text('Task'),
+          label: 'Task',
         ),
       ],
       onTap: onTabTapped,
