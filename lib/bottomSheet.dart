@@ -4,6 +4,8 @@ import 'package:flutter_todolist/home.dart';
 import 'util.dart';
 
 class Modal {
+  List<String> subTasks = <String>['Call the restaurant ', 'Ask for the date '];
+
   mainBottomSheet(BuildContext context) {
     showModalBottomSheet(
       context: context,
@@ -229,7 +231,7 @@ class Modal {
                             child: Row(
                               children: <Widget>[
                                 Text(
-                                  'Today, 19: - 21:00',
+                                  'Today, 19:00 - 21:00',
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
                                       fontSize: 12,
@@ -243,7 +245,95 @@ class Modal {
                               ],
                             ),
                           ),
-                          SizedBox(height: 20),
+                          SizedBox(height: 10),
+                          RaisedButton(
+                            onPressed: () {
+                              subTasks.add('New subtask');
+                              //print(subTasks.toString());
+                            },
+                            textColor: Colors.white,
+                            padding: const EdgeInsets.all(0.0),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            child: Container(
+                              width: 120,
+                              height: 40,
+                              decoration: const BoxDecoration(
+                                gradient: LinearGradient(
+                                  colors: <Color>[
+                                    CustomColors.BlueLight,
+                                    CustomColors.BlueDark,
+                                  ],
+                                ),
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(8.0),
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: CustomColors.BlueShadow,
+                                    blurRadius: 2.0,
+                                    spreadRadius: 1.0,
+                                    offset: Offset(0.0, 0.0),
+                                  ),
+                                ],
+                              ),
+                              padding:
+                                  const EdgeInsets.fromLTRB(20, 10, 20, 10),
+                              child: Center(
+                                child: const Text(
+                                  'Add subtask',
+                                  style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w500),
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(height: 10),
+                          Container(
+                            width: MediaQuery.of(context).size.width / 1.2,
+                            height: 150,
+                            child: ListView.builder(
+                              itemCount: subTasks.length,
+                              itemBuilder: (BuildContext context, int index) {
+                                return Container(
+                                  margin: const EdgeInsets.only(bottom: 5.0),
+                                  child: TextFormField(
+                                    initialValue: subTasks[index],
+                                    autofocus: false,
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontStyle: FontStyle.normal,
+                                      color: Colors.grey[850],
+                                    ),
+                                    decoration: InputDecoration(
+                                      border: InputBorder.none,
+                                      enabledBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Colors.grey,
+                                          width: 1.0,
+                                        ),
+                                        borderRadius: BorderRadius.all(
+                                          Radius.circular(50.0),
+                                        ),
+                                      ),
+                                      focusedBorder: OutlineInputBorder(
+                                        borderSide: BorderSide(
+                                          color: Colors.blue,
+                                          width: 2.0,
+                                        ),
+                                        borderRadius: BorderRadius.all(
+                                          Radius.circular(50.0),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                );
+                              },
+                            ),
+                          ),
+                          SizedBox(height: 25),
                           RaisedButton(
                             onPressed: () {
                               Navigator.pushReplacement(

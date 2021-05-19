@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.flutter_todolist">
 
-    <uses-permission android:name="android.permission.INTERNET" android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <!-- io.flutter.app.FlutterApplication is an android.app.Application that
          calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -10,7 +10,6 @@
          FlutterApplication and put your custom class here. -->
 
     <application
-        android:name="io.flutter.app.FlutterApplication"
         android:label="Flutter To-do example"
         android:icon="@mipmap/launcher_icon">
         <activity
@@ -25,8 +24,8 @@
                  there is no splash screen (such as the default splash screen
                  defined in @style/LaunchTheme). -->
             <meta-data
-                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
-                android:value="true" />
+                android:name="flutterEmbedding"
+                android:value="2" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
